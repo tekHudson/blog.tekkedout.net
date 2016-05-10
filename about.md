@@ -3,13 +3,16 @@ layout: page
 title: About
 permalink: /about/
 ---
+### Who are you?
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am Tek.  
+I am a Software Developer  
+Officially, my job is to write code to extend or improve our products functionality.  
+But really? I pour ideas into a text editor and see how the computer feels about it.  
+Basically? It's all about sharing my mind with technology.  
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+### Current Projects
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+{% include github-stockaid.html %}  
+This blog ;D  
+
