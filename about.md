@@ -11,8 +11,13 @@ Officially, my job is to write code to extend or improve our products functional
 But really? I pour ideas into a text editor and see how the computer feels about it.  
 Basically? It's all about sharing my mind with technology.  
 
-### Current Projects
+### What are your current projects?
 
-{% include github-stockaid.html %}  
-This blog ;D  
+{% include github-stockaid.html %}
+
+### Where are you around the web?
+
+{% include icon-twitter.html username=site.twitter_username %}
+{% include icon-github.html username=site.github_username %}
+{% include linkedin-link.html %}
 
