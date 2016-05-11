@@ -7,13 +7,17 @@
 
 # Site settings
 title: Tekked Out Reality
-email: tek.hudson@gmail.com
+email: me@tekkedout.net
 description: > # this means to ignore newlines until "baseurl:"
   Greatful Software Developer who's living the dream, one day at a time.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tekkedout.net" # the base hostname & protocol for your site
 twitter_username: TekHudson
-github_username:  tekHudson
+github_username:  TekHudson
+linkedin_username:  TekHudson
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-bootstrap-sass
