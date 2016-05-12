@@ -6,8 +6,8 @@
 </description>
     <link>http://tekkedout.net/</link>
     <atom:link href="http://tekkedout.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 May 2016 13:34:26 -0700</pubDate>
-    <lastBuildDate>Tue, 10 May 2016 13:34:26 -0700</lastBuildDate>
+    <pubDate>Wed, 11 May 2016 20:57:12 -0700</pubDate>
+    <lastBuildDate>Wed, 11 May 2016 20:57:12 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -28,8 +28,11 @@
     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;keys&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;super+w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;close_file&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;I hope this is of use to all you fellow Sublimites. If you have any questions please feel free to hit me up &lt;a href=&quot;https://twitter.com/TekHudson&quot;&gt;&lt;span class=&quot;icon icon--twitter&quot;&gt;&lt;svg viewBox=&quot;0 0 16 16&quot;&gt;&lt;path fill=&quot;#828282&quot; d=&quot;M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
-&lt;/span&gt;&lt;span class=&quot;username&quot;&gt;@TekHudson&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I hope this is of use to all you fellow Sublimites. If you have any questions please feel free to hit me up &lt;a href=&quot;https://twitter.com/TekHudson&quot;&gt;
+    &lt;span class=&quot;icon icon--twitter&quot;&gt;&lt;svg viewBox=&quot;0 0 16 16&quot;&gt;&lt;path fill=&quot;#828282&quot; d=&quot;M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+&lt;/span&gt;
+    &lt;span class=&quot;username&quot;&gt;@TekHudson&lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 09 May 2016 21:00:00 -0700</pubDate>
