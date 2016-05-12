@@ -6,12 +6,12 @@
 </description>
     <link>http://tekkedout.net/</link>
     <atom:link href="http://tekkedout.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 May 2016 23:09:02 -0700</pubDate>
-    <lastBuildDate>Wed, 11 May 2016 23:09:02 -0700</lastBuildDate>
+    <pubDate>Wed, 11 May 2016 23:12:48 -0700</pubDate>
+    <lastBuildDate>Wed, 11 May 2016 23:12:48 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
-        <title>Sublime Text 3: TekTip 1 - remapping close tab</title>
+        <title>TekTip 1: Sublime Text 3 - remapping close tab</title>
         <description>&lt;p&gt;I often use Sublimes powerful replace tool to do mass editing (tempting the fates I know but that is what &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; and GitHub’s review tools are for). I got really tiered of using the &lt;code class=&quot;highlighter-rouge&quot;&gt;command+w&lt;/code&gt; feature to close all my tabs and once the last tab had closed it would close the window and thereby close my project. Here is my fix.&lt;/p&gt;
 
 &lt;p&gt;I am currently using Sublime Text 3 (build 3103). Default action for &lt;code class=&quot;highlighter-rouge&quot;&gt;command+w&lt;/code&gt; is to close the current tab. The action it actually passes to sublime is &lt;code class=&quot;highlighter-rouge&quot;&gt;close&lt;/code&gt;. You can see this in the default key bindings (I am not sure if it is possible but even if it is I reccomend NOT editing your default bindings, override them with user as described below):&lt;/p&gt;
@@ -36,9 +36,21 @@
 
 </description>
         <pubDate>Mon, 09 May 2016 21:00:00 -0700</pubDate>
-        <link>http://tekkedout.net/2016/05/09/sublime-tektip-1.html</link>
-        <guid isPermaLink="true">http://tekkedout.net/2016/05/09/sublime-tektip-1.html</guid>
+        <link>http://tekkedout.net/tektip/sublime/text/3/keyboard/mapping/2016/05/09/sublime-tektip-1.html</link>
+        <guid isPermaLink="true">http://tekkedout.net/tektip/sublime/text/3/keyboard/mapping/2016/05/09/sublime-tektip-1.html</guid>
         
+        
+        <category>tektip</category>
+        
+        <category>sublime</category>
+        
+        <category>text</category>
+        
+        <category>3</category>
+        
+        <category>keyboard</category>
+        
+        <category>mapping</category>
         
       </item>
     

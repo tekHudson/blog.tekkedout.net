@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Sublime Text 3: TekTip 1 - remapping close tab"
+title:  "TekTip 1: Sublime Text 3 - remapping close tab"
 date:   2016-05-09 21:00:00 -0700
-categories:
+categories: tektip sublime text 3 keyboard mapping 
 ---
 
 I often use Sublimes powerful replace tool to do mass editing (tempting the fates I know but that is what `git diff` and GitHub's review tools are for). I got really tiered of using the `command+w` feature to close all my tabs and once the last tab had closed it would close the window and thereby close my project. Here is my fix.
