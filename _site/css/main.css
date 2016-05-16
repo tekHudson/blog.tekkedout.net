@@ -311,6 +311,12 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+.share-page {
+  text-align: right; }
+
+.fb_iframe_widget {
+  top: -6px; }
+
 /**
  * Syntax highlighting styles
  */
