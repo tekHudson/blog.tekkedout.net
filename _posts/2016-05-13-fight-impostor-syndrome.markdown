@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "My fight with Impostor Syndrome (part 1)"
+title:  My fight with Impostor Syndrome (part 1)
+description: A junior developers battle with imposter syndrome, part 1.
 date:   2016-05-13 21:50:00 -0700
 categories: fight impostor syndrome
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "TekTip 1: Sublime Text 3 - remapping close tab"
+title:  TekTip 1: Sublime Text 3 - Remapping close tab
+description: Remapping the 'close tab' action in Sublime Text 3 to prevent frustration.
 date:   2016-05-09 21:00:00 -0700
 categories: tektip sublime text 3 keyboard mapping 
 ---
