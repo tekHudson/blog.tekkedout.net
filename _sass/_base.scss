@@ -134,6 +134,10 @@ code {
 
 code {
     padding: 1px 5px;
+
+    &.language-terminal::before {
+        content: "$ ";
+    }
 }
 
 pre {
