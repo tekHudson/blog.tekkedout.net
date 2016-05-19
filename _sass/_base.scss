@@ -135,8 +135,17 @@ code {
 code {
     padding: 1px 5px;
 
+    &.language-plaintext {
+        color: #FFFFFF;
+    }
+
+    &.language-terminal {
+        color: #00FF00;
+    }
+
     &.language-terminal::before {
         content: "$ ";
+        color: #00FF00;
     }
 }
 
