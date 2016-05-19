@@ -98,6 +98,13 @@ code {
 
 code {
   padding: 1px 5px; }
+  code.language-plaintext {
+    color: #FFFFFF; }
+  code.language-terminal {
+    color: #00FF00; }
+  code.language-terminal::before {
+    content: "$ ";
+    color: #00FF00; }
 
 pre {
   padding: 8px 12px;
