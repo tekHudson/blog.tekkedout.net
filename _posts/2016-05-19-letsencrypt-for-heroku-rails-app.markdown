@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Why pay for SSL? Using Let's Encrypt on a Heroku Rails App"
+title:  Why pay for SSL? Using Let's Encrypt on a Heroku Rails App
+description: Utilizing Let's Encrypts free SLL cert generation for a rails app hosted on Heroku.
 date:   2016-05-19 08:45:00 -0700
 categories: letsencrypt heroku rails ssl
 ---
