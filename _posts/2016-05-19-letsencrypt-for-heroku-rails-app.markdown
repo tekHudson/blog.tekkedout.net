@@ -84,6 +84,8 @@ end
 
 {% highlight ruby %}
 get "/.well-known/acme-challenge/:id" => "letsencrypt#authenticate_key"
+
+
 {% endhighlight %}
 
 * Test locally by going to localhost:3000/.well-known/acme-challenge/your_special_key_prefix and ensure your your_special_key_output is rendered.
@@ -131,3 +133,5 @@ sudo heroku certs:update /etc/letsencrypt/live/your_domain_name/fullchain.pem /e
 * Adding the SSL Endpoint changes the CNAME you need to point your custom domain to. You’ll need to edit your DNS using the new value listed in your Heroku dashboard for it to work correctly.
 
 Hopefully this tutorial was of some use to you. If your still stuck please feel free to reach out to me via the below communication methods :D
+
+Props to the post I originally followed from [Collective Idea](http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku/).
