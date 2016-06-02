@@ -13,7 +13,7 @@
   <meta name="twitter:site" content="@TekHudson" />
   <meta name="twitter:title" content="Why pay for SSL? Using Let&#39;s Encrypt on a Heroku Rails App" />
   <meta name="twitter:description" content="Utilizing Let&#39;s Encrypts free SLL cert generation for a rails app hosted on Heroku." />
-  <meta name="twitter:image" content="http://blog.tekkedout.net/image/blogIcon.png" />
+  <meta name="twitter:image" content="http://blog.tekkedout.net/images/blogIcon.png" />
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://blog.tekkedout.net/letsencrypt/heroku/rails/ssl/2016/05/19/letsencrypt-for-heroku-rails-app.html">
@@ -161,13 +161,20 @@ Press ENTER to continue</code></pre></figure>
   <li>Create a new controller (or use an existing one) to handle this request:</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">LetsencryptController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">LetsencryptController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
   <span class="n">skip_before_action</span> <span class="ss">:authenticate_user!</span>
 
   <span class="k">def</span> <span class="nf">authenticate_key</span>
     <span class="n">render</span> <span class="ss">text: </span><span class="s2">"your_special_key_output"</span>
   <span class="k">end</span>
-<span class="k">end</span></code></pre></figure>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <blockquote>
   <p>I have devise so I had to add a skip_before_action to stop devise from preventing the page load</p>
@@ -230,9 +237,11 @@ Press ENTER to continue</code></pre></figure>
   <li>Adding the SSL Endpoint changes the CNAME you need to point your custom domain to. You’ll need to edit your DNS using the new value listed in your Heroku dashboard for it to work correctly.</li>
 </ul>
 
-<p>Hopefully this tutorial was of some use to you. If your still stuck please feel free to reach out to me via the below communication methods :D</p>
+<p>Hopefully this tutorial was of some use to you. If your still stuck please feel free to reach out to me via the communication methods listed on this site :D</p>
 
 <p>Props to the post I originally followed from <a href="http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku/">Collective Idea</a>.</p>
+
+<p>Happy Coding!</p>
 
   </div>
 

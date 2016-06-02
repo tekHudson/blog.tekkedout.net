@@ -88,8 +88,7 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
+pre, code {
   color: #F92672;
   font-size: 15px;
   border: 1px solid #e8e8e8;
@@ -110,9 +109,16 @@ pre {
   padding: 8px 12px;
   overflow-x: auto; }
   pre > code {
-    border: 0;
+    border: 0px;
     padding-right: 0;
     padding-left: 0; }
+  pre.lineno {
+    border: 0px; }
+  pre pre {
+    border: 0px; }
+  pre td.gutter > pre {
+    border-radius: 0px;
+    border-right: 1px solid #e8e8e8; }
 
 /**
  * Wrapper

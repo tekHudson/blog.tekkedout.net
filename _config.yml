@@ -19,5 +19,3 @@ linkedin_username:  TekHudson
 # Build settings
 markdown: kramdown
 
-gems:
-  - jekyll-bootstrap-sass
