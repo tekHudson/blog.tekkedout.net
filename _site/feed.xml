@@ -6,9 +6,102 @@
 </description>
     <link>http://blog.tekkedout.net/</link>
     <atom:link href="http://blog.tekkedout.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 May 2016 16:39:44 -0700</pubDate>
-    <lastBuildDate>Thu, 19 May 2016 16:39:44 -0700</lastBuildDate>
+    <pubDate>Thu, 02 Jun 2016 14:22:56 -0700</pubDate>
+    <lastBuildDate>Thu, 02 Jun 2016 14:22:56 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Pretify your Jekyll Twitter Shares</title>
+        <description>&lt;p&gt;Ever wanted to have your, or others, Twitter posts containing links to your blog look a bit snazzier?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://blog.tekkedout.net/images/improvedTwitterPost.png&quot; alt=&quot;Improved Twitter Post&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the &lt;a href=&quot;https://dev.twitter.com/cards/overview&quot;&gt;Twitter dev site&lt;/a&gt; for this feature. I needed more information so I scoured the web and combined information and came up with these simple steps:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you are using a default Jekyll project then just follow the instructions.&lt;br /&gt;
+If not you may need to put code snippets in your corrisponding locations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Choose the image you want to have displayed on the Twitter post. This depends on which type of card you want:
+    &lt;ul&gt;
+      &lt;li&gt;Summary Card (Used for this demo) - At least 120px by 120px and no more than 1MB in size. For an expanded tweet and its detail page, the image will be cropped to a 4:3 aspect ratio and resized to be displayed at 120px by 90px. The image will also be cropped and resized to 120px by 120px for use in embedded tweets.&lt;/li&gt;
+      &lt;li&gt;Summary Card with Large Image - At least 280px by 150px, and no more than 1MB in size.&lt;/li&gt;
+      &lt;li&gt;Photo Card - All files must be below 1MB in size. Twitter will resize images, maintaining the original aspect ratio to fit the following maximum sizes:
+        &lt;ul&gt;
+          &lt;li&gt;Web: 375px by 435px&lt;/li&gt;
+          &lt;li&gt;Mobile with a non-retina display375px by 280px&lt;/li&gt;
+          &lt;li&gt;Mobile with a retina display 750px by 560px&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Gallery Card - No exact size is specified, but aim for 200px by 200px as a minimum. Images cannot exceed 1MB in size.&lt;/li&gt;
+      &lt;li&gt;App Card - App logo generated from your app ID. Image should be at least 800px by 320px, and can be in jpg, jpeg, png, or gif format.&lt;/li&gt;
+      &lt;li&gt;Player Card - See &lt;a href=&quot;https://dev.twitter.com/cards/types/player&quot;&gt;this page&lt;/a&gt; for more info&lt;/li&gt;
+      &lt;li&gt;Product Card - 160px by 160px or greater with a 1:1 aspect ratio&lt;/li&gt;
+      &lt;li&gt;Lead Generation Card - Should be at least 800px wide by 200px tall with a 4:1 aspect ratio. The maximum image size is 3 MB and you can crop and resize images after they’ve been uploaded.  Images can be in jpg, jpeg, png, or gif format.&lt;/li&gt;
+      &lt;li&gt;Website Card - 800px by 320px and the image must be less than 3MB in size.&lt;/li&gt;
+      &lt;li&gt;Coming Soon: Video Card - ???&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Place it into your images folder.
+    &lt;ul&gt;
+      &lt;li&gt;If you don’t have an images folder make a folder named &lt;code class=&quot;highlighter-rouge&quot;&gt;images&lt;/code&gt; in your root project directory and put it there.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add the following code to your &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;twitter:card&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;summary&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;twitter:site&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@TekHudson&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;twitter:title&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;twitter:description&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;twitter:image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://blog.tekkedout.net/images/blogIcon.png&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You may notice the use of &lt;code class=&quot;highlighter-rouge&quot;&gt;page.title&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;page.description&lt;/code&gt; in this code. You probably already have a &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; on all your posts. The &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; will likely need to be added to any post you want to utilize the card as this is a required field for it to function correctly on Twitters end.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;       &lt;span class=&quot;s&quot;&gt;Pretify Your Jekyll Twitter Shares&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Utilizing Twitter Cards to enhance the display of links to your pages.&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;        &lt;span class=&quot;s&quot;&gt;2016-05-23 19:30:00 -0700&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;twitter card blog post enhancement&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And viola, when you link to your posts from twitter you should see the example image.&lt;/p&gt;
+
+&lt;p&gt;If you have any quesitons or concerns please feel free to reach out to me via the communication methods listed on this site :D&lt;/p&gt;
+
+&lt;p&gt;Happy Coding!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 Jun 2016 08:30:00 -0700</pubDate>
+        <link>http://blog.tekkedout.net/twitter/card/blog/post/2016/06/02/add-twitter-card-to-blog-post.html</link>
+        <guid isPermaLink="true">http://blog.tekkedout.net/twitter/card/blog/post/2016/06/02/add-twitter-card-to-blog-post.html</guid>
+        
+        
+        <category>twitter</category>
+        
+        <category>card</category>
+        
+        <category>blog</category>
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>Why pay for SSL? Using Let&#39;s Encrypt on a Heroku Rails App</title>
@@ -87,13 +180,20 @@ Press ENTER to continue&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
   &lt;li&gt;Create a new controller (or use an existing one) to handle this request:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LetsencryptController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationController&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LetsencryptController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ApplicationController&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;skip_before_action&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:authenticate_user!&lt;/span&gt;
 
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;authenticate_key&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;text: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;your_special_key_output&quot;&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;I have devise so I had to add a skip_before_action to stop devise from preventing the page load&lt;/p&gt;
@@ -156,9 +256,11 @@ Press ENTER to continue&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
   &lt;li&gt;Adding the SSL Endpoint changes the CNAME you need to point your custom domain to. You’ll need to edit your DNS using the new value listed in your Heroku dashboard for it to work correctly.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Hopefully this tutorial was of some use to you. If your still stuck please feel free to reach out to me via the below communication methods :D&lt;/p&gt;
+&lt;p&gt;Hopefully this tutorial was of some use to you. If your still stuck please feel free to reach out to me via the communication methods listed on this site :D&lt;/p&gt;
 
 &lt;p&gt;Props to the post I originally followed from &lt;a href=&quot;http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku/&quot;&gt;Collective Idea&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy Coding!&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 May 2016 08:45:00 -0700</pubDate>
         <link>http://blog.tekkedout.net/letsencrypt/heroku/rails/ssl/2016/05/19/letsencrypt-for-heroku-rails-app.html</link>
@@ -213,7 +315,7 @@ Press ENTER to continue&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
       </item>
     
       <item>
-        <title>TekTip 1: Sublime Text 3 - remapping close tab</title>
+        <title>TekTip 1 - Sublime Text 3 Remapping Close Tab</title>
         <description>&lt;p&gt;I often use Sublimes powerful replace tool to do mass editing (tempting the fates I know but that is what &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; and GitHub’s review tools are for). I got really tiered of using the &lt;code class=&quot;highlighter-rouge&quot;&gt;command+w&lt;/code&gt; feature to close all my tabs and once the last tab had closed it would close the window and thereby close my project. Here is my fix.&lt;/p&gt;
 
 &lt;p&gt;I am currently using Sublime Text 3 (build 3103). Default action for &lt;code class=&quot;highlighter-rouge&quot;&gt;command+w&lt;/code&gt; is to close the current tab. The action it actually passes to sublime is &lt;code class=&quot;highlighter-rouge&quot;&gt;close&lt;/code&gt;. You can see this in the default key bindings (I am not sure if it is possible but even if it is I reccomend NOT editing your default bindings, override them with user as described below):&lt;/p&gt;
@@ -230,12 +332,9 @@ Press ENTER to continue&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;keys&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;super+w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;close_file&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;I hope this is of use to all you fellow Sublimites. If you have any questions please feel free to hit me up &lt;a href=&quot;https://twitter.com/TekHudson&quot;&gt;
-    &lt;span class=&quot;icon icon--twitter&quot;&gt;&lt;svg viewBox=&quot;0 0 16 16&quot;&gt;&lt;path fill=&quot;#828282&quot; d=&quot;M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
-&lt;/span&gt;
-    &lt;span class=&quot;username&quot;&gt;@TekHudson&lt;/span&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I hope this is of use to all you fellow Sublimites. If you have any questions please feel free to reach out to me via the communication methods listed on this site.&lt;/p&gt;
 
+&lt;p&gt;Happy Coding!&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 May 2016 21:00:00 -0700</pubDate>
         <link>http://blog.tekkedout.net/tektip/sublime/text/3/keyboard/mapping/2016/05/09/sublime-tektip-1.html</link>
